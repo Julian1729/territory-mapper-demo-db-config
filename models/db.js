@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-const appRoot = require('app-root-path');
 
-const streetHundredSchema = require(`${appRoot}/schemas/street-hundred`);
+const streetHundredSchema = require(`../schemas/street-hundred`);
 
 const init = state => new Promise((resolve, reject) => {
 
