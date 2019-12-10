@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const appRoot = require('app-root-path');
 
-const pointSchema = require(`${appRoot}/schemas/point-schema`);
-const lineStringSchema = require(`${appRoot}/schemas/line-string-schema`);
+const pointSchema = require(`${appRoot}/schemas/point`);
+const lineStringSchema = require(`${appRoot}/schemas/line-string`);
 
 const addressFeature = {
   type: {

@@ -12,8 +12,6 @@ const init = state => new Promise((resolve, reject) => {
   mongoose.connection.on('connected', function(){
       console.log(`Connected to US-PA`);
       // init street hundred model
-      mongoose.model('Philly', streetHundredSchema);
-      console.log('Created "Philly" model');
       resolve(mongoose);
   });
 
