@@ -3,5 +3,6 @@ const streetHundredSchema = require(`./schemas/street-hundred`);
 
 exports.connect = async () => {
   const db = await database.init();
-  return db.model('StreetHundred', streetHundredSchema);
+  streetHundredSchema.set('collection', 'philadelphia');
+  return db.model('PhillyStreetHundreds', streetHundredSchema);
 };
